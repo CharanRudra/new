@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Simple Website</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:#f4f4f4;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+
+    .container{
+      background:white;
+      padding:40px;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+      text-align:center;
+    }
+
+    h1{
+      color:#2563eb;
+    }
+
+    p{
+      color:#555;
+      margin-top:10px;
+    }
+
+    button{
+      margin-top:20px;
+      padding:12px 20px;
+      border:none;
+      background:#2563eb;
+      color:white;
+      border-radius:8px;
+      cursor:pointer;
+      font-size:16px;
+    }
+
+    button:hover{
+      background:#1d4ed8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Welcome to My Website 🚀</h1>
+
+    <p>Docker + Nginx HTML Demo</p>
+
+    <button onclick="showMessage()">
+      Click Me
+    </button>
+  </div>
+
+  <script>
+    function showMessage(){
+      alert("Website is working successfully!");
+    }
+  </script>
+
+</body>
+</html>
