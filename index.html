@@ -1,72 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Simple Website</title>
-
-  <style>
-    body{
-      margin:0;
-      font-family:Arial, sans-serif;
-      background:#f4f4f4;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
-    }
-
-    .container{
-      background:white;
-      padding:40px;
-      border-radius:12px;
-      box-shadow:0 4px 10px rgba(0,0,0,0.2);
-      text-align:center;
-    }
-
-    h1{
-      color:#2563eb;
-    }
-
-    p{
-      color:#555;
-      margin-top:10px;
-    }
-
-    button{
-      margin-top:20px;
-      padding:12px 20px;
-      border:none;
-      background:#2563eb;
-      color:white;
-      border-radius:8px;
-      cursor:pointer;
-      font-size:16px;
-    }
-
-    button:hover{
-      background:#1d4ed8;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Elite Luxury Villas</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-  <div class="container">
-    <h1>Welcome to My Website 🚀</h1>
-
-    <p>Docker + Nginx HTML Demo</p>
-
-    <button onclick="showMessage()">
-      Click Me
-    </button>
+<header class="hero">
+  <div class="overlay">
+    <h1>Elite Luxury Villas</h1>
+    <p>Where Luxury Meets Lifestyle</p>
+    <a href="#explore" class="btn">Explore Villas</a>
   </div>
+</header>
 
-  <script>
-    function showMessage(){
-      alert("Website is working successfully!");
-    }
-  </script>
+<section id="explore" class="section">
+  <h2>Our Premium Villas</h2>
+
+  <div class="villa-grid">
+    <div class="villa-card">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" />
+      <h3>Ocean View Mansion</h3>
+      <p>6 BHK • Private Pool • Smart Home</p>
+    </div>
+
+    <div class="villa-card">
+      <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811" />
+      <h3>Hilltop Palace</h3>
+      <p>5 BHK • Infinity Pool • Panoramic View</p>
+    </div>
+
+    <div class="villa-card">
+      <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde" />
+      <h3>Modern Glass Villa</h3>
+      <p>4 BHK • Designer Interior • Eco Smart</p>
+    </div>
+  </div>
+</section>
+
+<section class="section dark">
+  <h2>Why Choose Us</h2>
+  <p>Ultra Luxury Living • Prime Locations • Secure Gated Communities • AI Smart Homes</p>
+</section>
+
+<footer>
+  <p>© 2026 Elite Luxury Villas | Hyderabad</p>
+</footer>
 
 </body>
 </html>
